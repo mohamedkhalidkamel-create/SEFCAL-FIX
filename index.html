@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عجلة الحظ | Sefcal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <img class="logo" src="img/logo.png" alt="Sefcal" onerror="this.remove()">
+  <h1>لفّ العجلة واكسب خصم على الصيانة</h1>
+
+  <!-- الخطوة 1: المتابعة -->
+  <section id="step1">
+    <p class="hint">قبل اللفة تابع الصفحتين دول، وبعدها العجلة هتتفتح:</p>
+    <div class="follow-item">
+      <img class="page-logo" src="dis/sefcal.png" width="1080" height="1080" alt="Sefcal" onerror="this.remove()">
+      <a class="follow" id="f1" href="https://www.facebook.com/sefcalai" target="_blank" rel="noopener">تابع Sefcal</a>
+    </div>
+    <div class="follow-item">
+      <img class="page-logo" src="dis/fix.png" width="1080" height="1080" alt="Sefcal Fix" onerror="this.remove()">
+      <a class="follow" id="f2" href="https://www.facebook.com/SefcalFix" target="_blank" rel="noopener">تابع Sefcal Fix</a>
+    </div>
+    <p id="wait" class="hint small"></p>
+  </section>
+
+  <!-- الخطوة 2: العجلة -->
+  <section id="step2" hidden>
+    <div class="wheel-box">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="600" height="600"></canvas>
+      <div class="hub">Sefcal</div>
+    </div>
+    <button id="spin" class="btn">لفّ العجلة</button>
+    <p id="msg" class="hint"></p>
+  </section>
+
+  <!-- الخطوة 3: النتيجة -->
+  <section id="step3" hidden>
+    <p class="hint">مبروك! كسبت</p>
+    <div id="prize" class="prize"></div>
+    <p class="go">توجه دلوقتي لمركز الصيانة، العنوان مكتوب على الورقة اللي معاك، أو تواصل معنا دلوقتي:</p>
+    <a class="btn wa" href="https://wa.me/201055166344" target="_blank" rel="noopener">واتساب</a>
+    <a class="btn call" href="tel:+201055166344">اتصل بينا</a>
+    <div class="addr">
+      <strong>توجه إلى:</strong>
+      المحلة الكبرى<br>
+      موقف الزراعة القديم<br>
+      مقابل شادر الصياد<br>
+      <span class="open">الافتتاح 1 أكتوبر</span>
+    </div>
+  </section>
+</main>
+<audio id="spinSound" src="dis/TNT.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
